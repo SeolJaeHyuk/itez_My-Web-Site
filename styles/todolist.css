@@ -1,0 +1,113 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 기본 스타일을 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 메뉴바 스타일 */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);  /* 배경 흐림 (optional) */
+  color: white;
+  display: flex;
+  justify-content: space-between;  /* 메뉴 항목을 좌우로 배치 */
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;  /* 항상 위에 표시되도록 */
+}
+
+.navbar__brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar__menu li {
+  display: inline;
+}
+
+.navbar__menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar__menu a:hover {
+  color:rgb(13, 184, 226);  /* 마우스 오버 시 색상 변경 */
+}
+
+/* 콘텐츠 */
+.content {
+  display: flex;  /* Flexbox 활성화 */
+  flex-direction: column;  /* 텍스트 세로 정렬 */
+  justify-content: center;  /* 세로 중앙 정렬 */
+  align-items: center;  /* 가로 중앙 정렬 */
+  height: 100vh;  /* 화면 높이만큼 차지 */
+  color: white;  /* 텍스트 색상 */
+  text-align: center;  /* 텍스트 가로 중앙 정렬 */
+}
+
+/* 기존 body 스타일에서 배경 제거 */
+body {
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
